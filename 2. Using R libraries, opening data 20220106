@@ -1,0 +1,28 @@
+# R에 많은 기능이 있지만 또 다른 기능 쓰고 싶을 때 다른 유저가 사용한 R library 설치. 이때는 따옴표.
+
+install.packages("___") 
+
+# 이제 열어보기. 이걸 열어줘야~ 여기의 모든 기능을 쓸 수 있음. 여기의 기능을 보려면 help 사용
+
+library(____)
+help(___)
+
+# Data file 열기
+# 1. Rstudio Environment 창에서 data 불러오기 (r, spss, excel 등...)
+# 2. Url 불러와서 열기 
+
+url < 'https://raw.~~~~.csv'
+이름_df <- read.csv(url)   # 불러왔으니 df이름 적고 (df이라고 뒤에 표시해줘야 나중에 편해) 명령해주는 것
+
+# 3. excel로 csv 파일 만들고 난 후 불러오기 (.xlsx 아니고!)
+
+이름_df <- read.csv("내파일경로/파일이름.csv", header=TRUE)    # / 이표시는 아래 파일 \ 이표시는 상위 파일 (?) 
+
+가령,
+MEPS <-read.csv("~/Downloads/MyMEPS.csv", header=TRUE)  
+MEPS <- read.csv("C://Macintosh/Users/YourName/Downloads/MyMEPS.csv", 
+        header=TRUE)
+
+# 잘불러 왔는지 확인 list 또는 View로 명령 (View가 표로 나오는 장점이!)
+
+ls(이름_df) 
