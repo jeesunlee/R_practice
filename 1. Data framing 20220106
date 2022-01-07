@@ -1,0 +1,21 @@
+# Descriptive data 
+
+exp_group <- c("group A", "group B", "group C")
+exp_dep <-(5, 10, 15)
+exp_medication <-(33, 22, 11) 
+
+# Data framing
+
+exp_df <- data.frame(group=exp_group, depression=exp_dep, medication=exp_medication)
+
+# Veiw data graph
+
+View(exp_df) # 주의. 대문자V
+
+# 만들어진 data framing에서 하나의 column만 뽑을 때 -> 데이터프레임 + $ + 프레임 내 변수이름 
+
+exp_df$medication
+
+# 만들어진 data framing에서 하나의 column 중 특정 하나 뽑을 때 -> 데이터프레임 + $ + 프레임 내 변수이름 + [위치]
+
+exp_df$medication[2] 
