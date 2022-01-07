@@ -1,0 +1,8 @@
+# 변수에 특정 수를 곱하거나 빼야할 때 (가령 scale이 0.5씩 곱해져야 한다거나) 일단 변화시킬 수치를 명령해주기 
+
+scale_changerate <- 0.5
+
+# 이후 원래 df(data frame) 중($) 해당 변수 불러오고 다시 그걸 <-  이후로 명령해주기
+
+test_df$depression_scalechanged <- test_df$depression * 0.5.  #이때 같은 이름에 해당하게 명령하면 덮어 씌어지니 다른 이름으로 지정하는게 낫겠지! 
+
