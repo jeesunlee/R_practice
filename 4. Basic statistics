@@ -1,0 +1,42 @@
+# 패키지 다운로드 "_" 안에 이름 
+
+install.packages("___") 
+
+# 다운로드는 했지만 따로 로딩을 해줘야해 
+
+library(pacman)
+
+# 패키지 언로드 할 때 
+
+p_unload(all) #혹은 하나씩 
+
+# 데이터 한 눈에 보기
+
+head()
+plot() 
+
+# (x,y) 그래프 볼때 간격, 색깔, x 변수, y 변수 조정하고 싶을 떄
+
+plot( , 
+ col = "#cc000"  # 빨강
+ pch = 19  # point character
+ main = " " # 표 이름
+ xlab = " "
+ ylab = " " #lable
+ 
+ 
+# 주의!!! 쩜과 콤마 차이를 중요하게 볼 것! 
+
+# x와 y 축 간격을 같게 하고 싶을 떄 https://rfriend.tistory.com/86
+
+ library(ggplot2)
+> 
+> ggplot(marriage, aes(x=marriage$W_age, y=marriage$H_age)) + 
++ geom_point(shape=21, colour="black", size=3) +
++ coord_fixed()+
++ scale_x_continuous(breaks=c(10, 20, 30, 40, 50))+
++ scale_y_continuous(breaks = c(10, 20, 30, 40, 50)) +
++ ggtitle("Couple's age")
+
+
+# 마지막에 +를 누르면 자동으로 엔터쳐도 밑으로 내려감 
