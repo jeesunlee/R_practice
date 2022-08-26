@@ -1,0 +1,33 @@
+#rmd making chunck
+#start and finish with '''
+
+```{r}
+print("TGIF")
+```
+
+#How do you find out what your working directory is set to?
+
+```{r}
+#getwd()
+```
+
+add variable 
+1. x <- 5 
+2. x = 5
+
+
+# These are called logical or Boolean operators
+x <= 5 (x가 5보다 작거나 같은지 T/F)
+x > 9
+x == 1 # note == not =
+x != 3
+
+ y <- "5" [use this if you want to make character]
+> y
+[1] "5"
+> # check the structure of the variable
+> str(y) # y is a character/string
+ chr "5"
+> str(x) # x is a number
+ num 4
+> 
